@@ -73,7 +73,7 @@ def main():
     _dao = dao()
     window = Tk()
     window.title("DB to CSV - 1.0")
-    icon = Image("photo", file="/home/raghav/Desktop/Nucleus/icon.png")
+    icon = Image("photo", file="icon.png")
     window.tk.call("wm", "iconphoto", window._w, icon)
 
     top_bar = Frame(window)
