@@ -1,0 +1,286 @@
+/************************************************************
+Print rule for CSS, But try to save PAPER and code also
+/************************************************************/
+body{font-family:Arial,'Calibri';color:black;font-size:7pt;letter-spacing:0.1pt;zoom:0.7;} 
+body:before{content:'FinnOne Neo - CAS'}
+body:after{content:''}
+a{color:black;} 
+a[href]:after{content:"" !important;}
+strong{font-size:7pt;}
+u{text-decoration:none}
+table{border-collapse:separate;} 
+.row .table th, .row .table td{padding:1pt 2pt}
+table.table{}
+select{padding:0 !important;border:0 none !important;-moz-appearance: none;-webkit-appearance: none;appearance: none;}
+option{padding-left:0}
+:hover{box-shadow:none !transparent;}
+@media print {	
+  input::-webkit-input-placeholder { /* WebKit browsers */
+      color: transparent;
+  }
+  input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: transparent;
+  }
+  input::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: transparent;
+  }
+  input:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: transparent;
+  }
+  
+  textarea::-webkit-input-placeholder { /* WebKit browsers */
+      color: transparent;
+  }
+  textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: transparent;
+  }
+  textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: transparent;
+  }
+  textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: transparent;
+  }
+}
+
+.tabs-left .tab-content textarea{resize:none}
+/************************************************************/
+@media print {
+#header_slide .navbar .navbar-inner,#neutrino-mega-menu,#sidebar,#preference-form,#neutrino-footer,#searchBoxStyle,.hotKeysDesc,#activityDiv,
+button.feedback-btn.feedback-bottom-right,.ui-pnotify-container,#neutrino-content,#footerSlideContainer#wrap,#topmost_bar{display:none !important;}
+.row #neutrino-body {margin: 0 !important;padding: 0 !important;}
+.row #neutrino-body .rw11,.row #neutrino-main-content{width:100% !important}
+}
+/************************************************************/
+@media print {
+.row input[type='text']{box-shadow:none;border-radius:0;padding:0;border:0 none !important;}
+.row input[type='text']:disabled, 
+.row input[type='text']:readonly{background:#f5f5f5;color:black}
+.row textarea{box-shadow:none;border-radius:0;padding:0;border:0 none;}
+.row form{margin:0}
+.btn{display:none}
+.btn-danger .caret, .btn-info .caret, .btn-inverse .caret, .btn-primary .caret, .btn-success .caret, .btn-warning .caret
+{border-top-color: #000;border-bottom-color: #000;}
+.form-group.success .checkbox, .form-group.success .control-label, .form-group.success .help-block, .form-group.success .help-inline, .form-group.success .radio, .form-group.success input, .form-group.success select, .form-group.success textarea {border:1pt solid #c1c1c1 !important}
+}
+
+.btn-accordion:before, 
+.btn-accordion.collapsed:after{content:'';}
+
+a.btn-accordion{border-bottom:2px solid #c1c1c1;}
+/************************************************************/
+@media print {
+.nav-tabs {display:none}
+#search.ui-search-outer-wrap {display:none}
+.input-group .uneditable-input, .input-group input, .input-group select, .input-group .uneditable-input, .input-group input, .input-group select,
+.input-group.input-group input, .input-group.input-group select, .input-group.input-group .uneditable-input, textarea
+{border-radius:0;-moz-box-shadow:none !important;-webkit-box-shadow:none !important;box-shadow:none !important;}
+.row .alert-block, .row .alert-error, .row .alert-success, .row .alert-info
+{background:transparent;border:1pt solid #c1c1c1;}
+}
+/************************************************************
+						Application nav tabs
+/************************************************************/
+@media print {
+#neutrino-main-content #applicationChildTabs.nav-tabs li{font-size:12pt;margin:0 !important}
+#neutrino-main-content #applicationChildTabs li:first-child{margin:0 !important;}
+.application-main-tab.tabbable.tab-content.p-l5{padding:0;border:1pt solid #c1c1c1;}
+.row #appmain-contentwrapper .tabs-left .tab-content{border:0 none}
+}
+/************************************************************/
+@media print {
+.panel-collapse .uneditable-input, 
+.panel-collapse input, 
+.panel-collapse textarea
+{width:50pt;}
+}
+/************************************************************/
+@media print {
+.nav-tabs>li{padding:2px 0;text-align:center;}
+.tabs-left>.nav-tabs>li{text-align:left;}
+.nav-tabs>li>a {padding:0 5px;display:inline-block;}
+.nav-tabs>li.active{border-bottom:3pt solid #c1c1c1;}
+}
+/***********************************************************
+						font family
+************************************************************/
+@media print {
+	h1,h2,h3,h4,h5,h6{margin:1pt 0; font-family:"Arial",'Helvetica',Sans-serif,tahoma;}
+}	
+/************************************************************
+					font's print Hierarchy
+************************************************************/
+h1{font-size:15pt}
+h2{font-size:13pt}
+h3{font-size:11pt}
+h4{font-size:9pt}
+h5{font-size:7pt}
+h6{font-size:5pt}
+/************************************************************
+				jquery-plugins.min.css 
+************************************************************/
+@media print {			
+.heading{margin-bottom:1pt;}
+#heading .header{font-size:12pt;}
+#heading h1{font-size:15pt}
+}
+/************************************************************/
+@media print {
+th{font-size:7pt;font-weight:bold}
+td{font-size:7pt} 
+.table {margin-bottom:1pt;}
+.table thead th,.table tbody td{padding:2pt;}
+.row .table th, .row .table td,
+.row .table-bordered,.heading{border-color:#c1c1c1;}
+.row .table th, .row .table td,.row .table-bordered{margin:0}
+.table .row tbody td [class*="span"]{margin-left:0}
+.row .formSep{margin:2pt 0 !important;padding:0 !important;}
+}
+/************************************************************/
+@media print {
+.skip-print,
+.date-picker .help-block,
+.text_count_div,
+.date-picker .add-on{display:none}
+.no-skip-print{display:inherit} /**/
+}
+
+/************************************************************/
+@media print{
+select,
+input[type='button'],
+button,
+.date input[type='text'],
+.radio,
+.uneditable-input,
+.chosen-container-single .chosen-single,
+.nav-tabs li,
+#applicationChildTabs.nav-tabs li{font-size:7pt !important;}	
+}
+
+
+ @media print {	
+.row textarea,
+.row input[type="text"],
+.row input[type="password"],
+.row input[type="datetime"],
+.row input[type="datetime-local"],
+.row input[type="date"],
+.row input[type="month"],
+.row input[type="time"],
+.row input[type="week"],
+.row input[type="number"],
+.row input[type="email"],
+.row input[type="url"],
+.row input[type="search"],
+.row input[type="tel"],
+.row input[type="color"],
+.row .uneditable-input {
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: none;
+     -moz-transition: none;
+       -o-transition: none;
+          transition: none;
+   font-size:7pt !important;
+} 
+}
+/***********************************************************/
+@media print {	
+.row select,
+.row textarea,
+.row input[type="text"],
+.row input[type="password"],
+.row input[type="datetime"],
+.row input[type="datetime-local"],
+.row input[type="date"],
+.row input[type="month"],
+.row input[type="time"],
+.row input[type="week"],
+.row input[type="number"],
+.row input[type="email"],
+.row input[type="url"],
+.row input[type="search"],
+.row input[type="tel"],
+.row input[type="color"]{
+	text-align:left;
+	color:black;
+}
+}
+/************************************************************/
+@media print {
+.input-group .dropdown-menu, .input-group .popover, 
+.input-group .uneditable-input, .input-group input, 
+.input-group select, .input-group .dropdown-menu,
+.input-group .popover, 
+.input-group .uneditable-input,
+.input-group input,
+.input-group select{font-size:7pt !important;}
+.row .chosen-container-single .chosen-single{border-radius:0;border: 0 none;}
+.date input[type='text']{border:0 none;padding:0;border-radius: 0 !important}
+}
+/************************************************************
+				 scroll-spy
+************************************************************/				  
+div.scrollable-div{height:auto;overflow:auto;}
+/************************************************************
+ 				Sticky position 
+ **************************************************/
+ #neutrino-body .stickyThis {position:static !important;}
+ /* Lead details > personal discussion */
+#pd_currentLoanReq .table .money-ctrl strong{}
+/************************************************************
+ 					tag components 
+/***********************************************************/
+@media print {
+.money-ctrl .currencyField{width:40px;min-width:40px;}
+input[class^='amountCurrency']{border:0 none;width:50px;}
+.input-group.input-group.money-ctrl select{width: initial !important;}
+.money-ctrl.form-group select{font-size:7pt;}
+input.amount{font-weight:normal;}
+.money-ctrl.form-group .ro-ff input[type='text']{border:0 none !important;}
+.money-ctrl.form-group input[type='text']
+{border: 0 none !important;outline:0 none;border-radius:0 !important;text-align: left !important;
+-moz-box-shadow:none !important;-webkit-box-shadow:none !important;box-shadow:none !important;font-size:7pt}
+#neutrino-body .dataTables_wrapper th, #neutrino-body .dataTables_wrapper td{font-family:Arial;font-size:7pt;padding:1pt;}
+div.uni-radio span{background: none repeat scroll 0 0 transparent;}
+div.uni-checker, div.uni-radio{margin-right:4pt;width: 8pt;height: 12pt;}
+div .checkbox input[type=checkbox], div .radio input[type=radio],div div.uni-radio input, div div.uni-checker input
+{width:14px; height:14px;margin-left:0;margin-right:1pt;opacity:1 !important}
+/************************************************************/
+.table,
+.table.table-eight-col{width:100%;}
+div.scrollable-div{margin-left:5pt !important}
+.row.label.label-info{padding:1pt 0;}
+/************************************************************
+			 containers - user activity accordion
+*************************************************************/
+@media print {	
+.userActivity-accord-contain .btn-accordion .color-white, 
+.userActivity-accord-contain .btn-accordion.collapsed:before, 
+.userActivity-accord-contain .btn-accordion:before{color:black}
+.row a.btn-accordion, .row .btn-accordion a{padding:0}	
+.btn-accordion, .btn-accordion-div{border-width:0;font-size: 8pt;border-radius:0;} 
+.button-accordion-container{margin:0}
+.button-accordion-container .in.collapse{border-width:0; padding:0 1pt;}
+}
+/************************************************************
+					Open street MAP 
+/************************************************************/
+ #map.smallmap{height:256px;overflow:hidden;}
+/************************************************************
+ 			Application Header > TAT Display block, 
+ 			Customer Communication History
+/************************************************************/
+@media print {		
+#heading #task_user_dueDate{font-size:7pt}
+.workflow-show, .tat_display{display:none}
+.row .yel-bo-top{border-color:#c1c1c1}
+.commu_jsp_include1{display:none !important;}
+.yel-bo-top{background:transparent;border:1pt solid #c1c1c1;}
+}
+/****************************************/
+.application-main-tab .row label{margin:0}
+/****************************************
+		Microhousing loans tables
+****************************************/

@@ -1,0 +1,42 @@
+.table {
+	display: table
+}
+
+
+.nonMandatory {
+	display: table-row
+}
+
+.cell {
+	display: table-cell
+}
+
+div#required {
+	width: 400px;
+}
+
+/* creditPolicy.jsp */
+/*  eligibilityPolicy.jsp */
+.credit-policy-container .error,.eligibility-policy-form  .condition-set-mapping-form  .error {
+	color: red;
+}
+
+.table-striped tbody tr.highlight td{
+	-moz-box-shadow:0 0 2px #c1c1c1;
+	-webkit-box-shadow:0 0 2px #c1c1c1;
+	box-shadow:0 0 2px #c1c1c1;
+	
+}
+
+.credit-policy-container .table-striped tbody tr.highlight td,
+.eligibility-policy-form   .table-striped tbody tr.highlight td,
+.condition-set-mapping-form .table-striped tbody tr.highlight td
+{
+	background: #DFF0D8;
+	border-color:#c1c1c1;
+	border-width: thin;
+	border-style:dashed;
+    -moz-box-shadow: 0 0 7px #DFF0D8;
+    -webkit-box-shadow: 0 0 7px #DFF0D8;
+    box-shadow: 0 0 7px #DFF0D8;
+}

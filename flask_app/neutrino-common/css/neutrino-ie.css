@@ -1,0 +1,33 @@
+/* 
+Target different Browsers with the help of conditional comments classes
+defined in hflm_template.jsp 
+*/
+
+/* For Windows XP users, IE7 and IE8 must be present */
+.ie7 {}
+
+.ie8 {}
+
+
+.ie8 .mid-body .sys-offers {
+	margin-left:15% !important;
+}
+ .ie8 .mid-body .logo-neutrino {
+	margin-left:27% !important;
+}
+
+
+/* For Windows 7 user */
+.ie9 {}
+
+ .ie9 .calendar-widget-caption{
+	background-color:rgb(54,54,54) !important;
+	filter: none;
+}
+
+/* For Windows 8 users only */
+.ie10 {}
+
+/* ic pages */
+
+.ie .crumb li div{display:block;}

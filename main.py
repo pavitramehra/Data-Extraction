@@ -40,7 +40,10 @@ def connect_db():
 
             status = _dao.get_status()
             status_bar.config(text=status[0], fg=status[1])
-            connect_db_window.destroy()
+            if(status[1]=="green"):
+                connect_db_window.destroy()
+            else:
+                messagebox.showerror("Failed", "Can't connect to DB!!")
 
     connect_db_window = Toplevel(window)
     connect_db_window.title("Connect to Database*")

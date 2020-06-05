@@ -24,10 +24,11 @@ class dao():
             pass
 
     def get_status(self):
-        if(self.cursor):
+        if(self.cursor!=None):
             return STATUS_CONNECTED.format(self.db_name), "green"
         else:
             return STATUS_NOT_CONNECTED, "red"
 
     def service(self, source_file, destination_file):
-        pass
+        print("hello")
+        # pass

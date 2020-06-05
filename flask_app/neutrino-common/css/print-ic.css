@@ -1,0 +1,15 @@
+/************Print and Don't print in IC pages**************/
+body{font-family:Arial,'Calibri';color:gray;font-size:12pt;}
+a{color:gray;}
+table{border:1px solid gray;border-collapse:separate;}
+/***********************************************************/
+.checkbox input[type=checkbox], .radio input[type=radio]{opacity:1 !important;width:12px !important; height:12px !important;margin-left: 0;}
+.btn{background:gray;color:white;border-color:#c1c1c1;text-shadow:none}
+.btn-danger .caret, .btn-info .caret, .btn-inverse .caret, .btn-primary .caret, .btn-success .caret, .btn-warning .caret
+{border-top-color: #000;border-bottom-color: #000;}
+.tab-pane .tabs-left .nav-tabs {display:none}
+#search.ui-search-outer-wrap {display:none}
+.input-group .uneditable-input, .input-group input, .input-group select, .input-group .uneditable-input, .input-group input, .input-group select,
+.input-group.input-group input, .input-group.input-group select, .input-group.input-group .uneditable-input, textarea
+{border-radius:0;box-shadow:none;}
+.dont-print{display:none}

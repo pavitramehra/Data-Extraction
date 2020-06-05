@@ -1,0 +1,26 @@
+div[id="table_ImpactedCache_wrapper"]>.row>.col-sm-6:first-child {
+	float: right !important;
+}
+
+div[id="table_ImpactedCache_wrapper"]>.row:first-child+.row {
+	padding: 0px !important;
+}
+
+div[id="table_ImpactedCache_wrapper"]>.row:first-child {
+	padding: 0px 5px !important;
+}
+
+div[id="pageHeader"]>.pageHeader {
+	margin-bottom: 10px !important;
+}
+
+.btn-inverse {
+    color: #fff;
+    background-color: #1e1e1e;
+    border-color: #1e1e1e;
+}
+
+.btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active {
+    color: #fff;
+    background-color: #484949;
+ 

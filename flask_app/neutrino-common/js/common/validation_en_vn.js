@@ -1,0 +1,32 @@
+function getRegexValueForValidations(){
+	var regexForValidation = new Object();
+	regexForValidation.alphaNumWithDecimal=/^([\u00C0-\u1EF9_\- ]|[A-Za-z0-9_\- ])*$/;
+	regexForValidation.characterRegex=/^([\u00C0-\u1EF9 ]|[a-zA-Z])+$/i;
+	regexForValidation.validBPName=/^([\u00C0-\u1EF9_,#:.)(&\]\[\-\s]|[a-zA-Z0-9_,#:.)(&\]\[\-\s])*$/;
+	regexForValidation.validRuleName = /^([\u00C0-\u1EF9_\- ]|[A-Za-z0-9_\- ])*$/;
+	regexForValidation.validName = /^([\u00C0-\u1EF9_\- ]|[A-Za-z\- ]){1,30}$/;
+	regexForValidation.alphanum = /^([\u00C0-\u1EF9 ]|[a-z0-9\- ])+$/i;
+	regexForValidation.personName = /^(([\u00C0-\u1EF9 ]|[a-zA-Z])+([\']([\u00C0-\u1EF9 ]|[a-zA-Z])+)*)$/i;
+	regexForValidation.validCommunicationName = /^([\u00C0-\u1EF9 ]|[A-Za-z ])*$/;		
+	regexForValidation.validLocation = /^([\u00C0-\u1EF9_\-:\\.\/ ]|[a-zA-Z0-9_\-:\\.\/ ])*$/;
+	regexForValidation.validBranchCode = /^([\u00C0-\u1EF9_]{1,20}|[A-Za-z0-9_]{1,20})$/;
+	regexForValidation.validNoteCode = /^([\u00C0-\u1EF9_]{1,20}|[A-Za-z0-9_]{1,20})$/;
+	regexForValidation.validCode = /^([\u00C0-\u1EF9_]{1,8}|[A-Za-z0-9_]{0,8})$/;	
+	regexForValidation.validElementKey = /^([\u00C0-\u1EF90-9_\-]+( [\u00C0-\u1EF90-9_\-]+)|[A-Za-z0-9_\-]+( [A-Za-z0-9_\-]+))*$/;
+	regexForValidation.validateDefaultRate = /^[0-9]{0,2}(\.[0-9]{1,2})?$|^(100)(\.[0]{1,2})?$/;
+	regexForValidation.validateCurrConvRate = /^[0-9]*(\.[0-9]{0,12})?$/;
+	regexForValidation.validateDefaultPercentage = /^[0-9]{0,2}(\.[0-9]{1,2})?$|^(100)(\.[0]{1,2})?$/;
+	regexForValidation.validateLtv = /^[0-9]{0,2}(\.[0-9]{1,2})?$|^(100)(\.[0]{1,2})?$/;	
+	regexForValidation.validNameWithoutSpaces = /^([\u00C0-\u1EF90-9_]{1,20}|[A-Za-z0-9_]{1,20})$/;	
+	regexForValidation.validTimecode = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
+	regexForValidation.validInteger = /^-?\d+$/;
+	regexForValidation.isoCode = /^[0-9+ ]+$/i;
+	regexForValidation.amount = /^[0-9.,-]+$/i;
+	regexForValidation.percent = /^[0-9]{0,2}(\.[0-9]{1,2})?$|^(100)(\.[0]{1,2})?$/i;
+	regexForValidation.floatingDigits = /^[0-9]*(\.[0-9]+)?$/i;
+	regexForValidation.dateDE = /^\d\d?\.\d\d?\.\d\d\d?\d?$/;
+	regexForValidation.numberDE = /^-?(?:\d+|\d{1,3}(?:\.\d{3})+)(?:,\d+)?$/;
+	regexForValidation.lettersOnly = /^([\u00C0-\u1EF9]|[a-z])+$/i;
+	regexForValidation.letterswithbasicpunc = /^([\u00C0-\u1EF9\-.,()'\"\s]|[a-z\-.,()'\"\s])+$/i;
+	return regexForValidation;
+}

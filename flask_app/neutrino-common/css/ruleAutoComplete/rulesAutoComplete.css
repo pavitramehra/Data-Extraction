@@ -1,0 +1,90 @@
+#jqlform .rules-autocomplete {
+	position: relative !important;
+}
+
+.rules-autocomplete {
+	display: block !important;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#jqltext {
+	-moz-box-sizing: border-box;
+	clear: both;
+	color: #003366;
+	font-size: 15px;
+	height: 65px;
+	line-height: 1.4;
+	margin: 3px auto;
+	padding: 3px 4px;
+}
+
+textarea.ACTextArea {
+	-moz-box-sizing: border-box;
+	max-width: 100%;
+	padding: 1px 2px;
+	width: 100%;
+	resize: vertical;
+}
+
+
+#jqlform .rules-autocomplete .suggestions {
+	float: left;
+	margin-top: 5px;
+	width: 460px !important;
+}
+
+.rules-autocomplete .suggestions {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #BBBBBB;
+	height: auto;
+	left: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 12;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.p_advance_rule_container .rules-autocomplete .suggestions {
+	position:static;
+	overflow: visible;
+}
+
+.rules-autocomplete {
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+}
+
+.aui-theme-default {
+	color: #000000;
+}
+
+li.p_row:hover {
+    background-color: #3C78B5;
+    color: #FFFFFF;
+}
+
+li.active {
+    background-color: #3C78B5;
+    color: #FFFFFF;
+}
+
+.rules-autocomplete li {
+    cursor: default;
+    list-style: none outside none;
+    white-space: normal;
+     margin-left: 0px;
+}
+
+.advanceNotice .color-red {
+	font-size: 14px; font-family:  Arial;
+}
+
+/**/
+

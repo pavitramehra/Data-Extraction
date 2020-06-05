@@ -1,0 +1,75 @@
+#ruleMatrix{ height: auto!important;}
+.ruleMatrixGrid { width: 100%; border: 1px solid #e5e5e5; background: #fbfbfb; }
+.ruleMatrixGrid table.dataTable { margin-bottom: 0px !important; margin-top: 0px !important; border-collapse: collapse !important; width: 100%; }
+.ruleMatrixGrid table.dataTable tr.odd, .ruleMatrixGrid table.dataTable tr.even { background: #fff; }
+.ruleMatrixGrid table.dataTable td, .ruleMatrixGrid table.dataTable th { max-width: none; border: 1px solid #e5e5e5; }
+.ruleMatrixGrid.AppGridContainer div.dataTables_wrapper div.dataTables_info { float: left; }
+.ruleMatrixGrid.AppGridContainer div.dataTables_wrapper div.dataTables_paginate { float: right; margin-top: 5px; }
+.ruleMatrixGrid table.dataTable td .editRuleRow { position: relative; width: 30px; height: 30px; display: inline-block; color: #337ab7; margin: 0 5px; }
+.ruleMatrixGrid table.dataTable td .editRuleRow:hover { color: #2e6ca0; }
+.ruleMatrixGrid table.dataTable td .editRuleRow i { position: absolute; left: 0; top: 0; width: 100%; text-align: center; line-height: 30px; font-size: 18px; }
+.ruleMatrixGrid table.dataTable td .deleteRuleRow { position: relative; width: 30px; height: 30px; display: inline-block; color: #ff0000; margin: 0 5px; }
+.ruleMatrixGrid table.dataTable td .deleteRuleRow:hover { color: #af1212; }
+.ruleMatrixGrid table.dataTable td .deleteRuleRow i { position: absolute; left: 0; top: 0; width: 100%; text-align: center; line-height: 30px; font-size: 18px; }
+.ruleMatrixGrid table.dataTable tr th:first-child,.ruleMatrixGrid.AppGridContainer table.dataTable.DTFC_Cloned thead th:first-child { width: 50px!important; }
+.ruleMatrixGrid table.dataTable tr th:last-child { width: 120px; text-align: center; }
+.ruleMatrixGrid.AppGridContainer table.dataTable thead th { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #70a415; }
+.ruleMatrixGrid.AppGridContainer table.dataTable thead th.thenAction{ color: #ff0000; }
+.ruleMatrixGrid.AppGridContainer .dataTables_empty{ text-align: center; }
+.ruleSetMatrixGrid.AppGridContainer .table{ margin:0; }
+
+.ruleSetMatrixGrid.AppGridContainer .table th{ border-top:none;}
+.ruleSetMatrixGrid.AppGridContainer .table th,.ruleSetMatrixGrid.AppGridContainer .table td{ border-right:1px solid #e5e5e5; }
+.ruleSetMatrixGrid.AppGridContainer .table th:last-child,.ruleSetMatrixGrid.AppGridContainer .table td:last-child{ border-right:none;}
+.ruleSetMatrixGrid.AppGridContainer .table .editRuleSetRow { position: relative; width: 30px; height: 30px; display: inline-block; color: #337ab7; margin: 0 5px; }
+.ruleSetMatrixGrid.AppGridContainer .table .editRuleSetRow:hover { color: #2e6ca0; }
+.ruleSetMatrixGrid.AppGridContainer .table .editRuleSetRow i { position: absolute; left: 0; top: 0; width: 100%; text-align: center; line-height: 30px; font-size: 18px; }
+.ruleSetMatrixGrid.AppGridContainer .table .deleteRuleSetRow { position: relative; width: 30px; height: 30px; display: inline-block; color: #ff0000; margin: 0 5px; }
+.ruleSetMatrixGrid.AppGridContainer .table .deleteRuleSetRow:hover { color: #af1212; }
+.ruleSetMatrixGrid.AppGridContainer .table .deleteRuleSetRow i { position: absolute; left: 0; top: 0; width: 100%; text-align: center; line-height: 30px; font-size: 18px; }
+
+
+
+.ruleMatrixGrid.AppGridContainer table.dataTable.DTFC_Cloned thead th{ color: #000; }
+
+#ifConditiontable .ifRadioCon { display: inline-block; border: 1px solid #EE5D0F; width: 65px; height: 30px; border-radius: 30px; position: relative; }
+#ifConditiontable .ifRadioCon:after { position: absolute; content: ""; width: 28px; height: 28px; background: #EE5D0F; border-radius: 50%; top: 0; left: 0; transition: all 0.3s; }
+#ifConditiontable .ifRadioCon.active { border: 1px solid #4fc339; }
+#ifConditiontable .ifRadioCon.active:after { background: #4fc339; left: 35px; transition: all 0.3s; }
+#ifConditiontable .ifRadioCon.disabledRadio,#ifConditiontable .ifRadioCon.disabledRadio.active{ pointer-events: none;border: 1px solid #ddd; }
+#ifConditiontable .ifRadioCon.disabledRadio.active:after{background: rgba(79, 195, 57, 0.5);}
+#ifConditiontable .ifRadioCon.disabledRadio:after{background: rgba(238, 93, 15, 0.5);}
+
+#ifConditiontable .minMax { display: inline-block; border: 1px solid #EE5D0F; width: 100px; height: 30px; border-radius: 30px; position: relative; }
+#ifConditiontable .minMax:after { position: absolute; content: ""; width: 28px; height: 28px; background: #EE5D0F; border-radius: 50%; top: 0; left: 0; transition: all 0.3s; }
+#ifConditiontable .minMax.max { border: 1px solid #4fc339; }
+#ifConditiontable .minMax.max:after { background: #4fc339; left: 35px; transition: all 0.3s; }
+#ifConditiontable .minMax.min { border: 1px solid #eec80f; }
+#ifConditiontable .minMax.min:after {background: rgba(238, 200, 15, 0.5);left: 70px;transition: all 0.3s;}
+#ifConditiontable .minMax.disabledminMax{ pointer-events: none;border: 1px solid #ddd; }
+#ifConditiontable .minMax.disabledminMax:after{background: rgba(238, 93, 15, 0.5);}
+#ifConditiontable .minMax.disabledminMax.max:after{background: rgba(79, 195, 57, 0.5);}
+#ifConditiontable .minMax.disabledminMax.min:after{background: rgba(238, 200, 15, 0.5);}
+
+
+
+#thenActiontable .thenRadioCon { display: inline-block; border: 1px solid #EE5D0F; width: 65px; height: 30px; border-radius: 30px; position: relative; }
+#thenActiontable .thenRadioCon:after { position: absolute; content: ""; width: 28px; height: 28px; background: #EE5D0F; border-radius: 50%; top: 0; left: 0; transition: all 0.3s; }
+#thenActiontable .thenRadioCon.active { border: 1px solid #4fc339; }
+#thenActiontable .thenRadioCon.active:after { background: #4fc339; left: 35px; transition: all 0.3s; }
+#thenActiontable .thenRadioCon.disabledRadio,#thenActiontable .thenRadioCon.disabledRadio.active{pointer-events: none;border: 1px solid #ddd;}
+#thenActiontable .thenRadioCon.disabledRadio.active:after{background: rgba(79, 195, 57, 0.5);}
+#thenActiontable .thenRadioCon.disabledRadio:after{    background: rgba(238, 93, 15, 0.5);}
+
+
+.deleteIfThenRow { position: relative; width: 30px; height: 30px; display: inline-block; color: #ff0000; margin: 0 5px; }
+.deleteIfThenRow:hover { color: #af1212; }
+.deleteIfThenRow i { position: absolute; left: 0; top: 0; width: 100%; text-align: center; line-height: 30px; font-size: 18px; }
+
+.addIfThenRow { position: relative; width: 30px; height: 30px; display: inline-block; color: #4fc339; margin: 0 5px; }
+.addIfThenRow:hover { color: #285D1F; }
+.addIfThenRow i { position: absolute; left: 0; top: 0; width: 100%; text-align: center; line-height: 30px; font-size: 18px; }
+
+.fieldHeader {height: 10px; width: 10px; background-color: #EE5D0F; border-radius: 50%; display: inline-block;}
+.objectGraphHeader {height: 10px; width: 10px; background-color: #4fc339; border-radius: 50%; display: inline-block;}
+.minHeader {height: 10px; width: 10px; background-color: #eec80f; border-radius: 50%; display: inline-block;}

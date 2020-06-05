@@ -1,0 +1,43 @@
+/* system-setup-login.css */
+
+.welcome-to-sys-setup .login_box  input[type="text"],
+.welcome-to-sys-setup .login_box  input[type="password"]{
+height:30px
+}
+
+.welcome-to-sys-setup .mid-body .block-c{
+	margin: 0 auto
+} 
+
+.welcome-to-sys-setup .sys-offers{
+
+}
+
+.login_page .mid-body{
+   margin: 0 auto;
+   width: 320px
+}
+
+/* wip */
+/* .welcome-to-sys-setup.welcome-to-neutrino{
+
+	 -webkit-transition:pulse;
+	
+}
+
+
+@-webkit-keyframes pulse {
+ 0% {
+   background-color: red;  
+ }
+ 33% {
+   background-color: blue; 
+ }
+ 67% {
+   background-color: green; 
+ }
+ 100% {
+   background-color: red; 
+ }
+}
+ */

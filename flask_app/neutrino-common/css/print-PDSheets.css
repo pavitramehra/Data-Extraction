@@ -1,0 +1,731 @@
+@page {
+	size: 42%; /* auto is the initial value */
+	margin: 5mm 10mm 5mm 2mm;
+  	float:none;
+}
+
+@media screen /*--This is for Print Preview Screen--*/ {
+	
+	
+	body {
+		margin: 3mm !important;
+	}
+	label {
+		color: black !important;
+	}
+	.btn {
+		display: none;
+	}
+	.add-on,div.text_count_div,div.tooltip {
+		display: none !important;
+	}
+	input,input[disabled] {
+		border: none !important;
+		box-shadow: none !important;
+		background: none;
+		cursor: auto !important;
+	}
+	div.help-block,.hideForPrint {
+		/* font-size: 10px !important; */
+		display: none !important;
+	}
+	div.containerALLPdSheet {
+		width: 100% !important;
+		/* margin: 0 auto !important; */
+	}
+	input::-webkit-input-placeholder {
+		color: #FFFFFF !important;
+	}
+	input:-moz-placeholder {
+		color: #FFFFFF !important;
+	}
+	input::-moz-placeholder {
+		color: #FFFFFF !important;
+	}
+	input:-ms-input-placeholder {
+		color: #FFFFFF !important;
+	}
+	
+	.float-r {
+		float: right;
+	}
+	.float-l {
+		float: left;
+	}
+	.m-t5 {
+		margin-top: 5px;
+	}
+	.m-r5 {
+		margin-right: 5px;
+	}
+	form,.form-group {
+		margin-bottom: 0px !important;
+	}
+	
+	.table th {
+		font-size: 12px !important;
+		
+	}
+	.mobile-phn-container {
+		display: inline-block;
+	}
+	.border_label {
+		border: 1px solid #e0e0e0;
+		min-height: 24px;
+		padding-left: 1px;
+		white-space: normal !important;
+		font-size: 12px;
+	}
+	.min-width26 {
+		min-width: 26px;
+	}
+	a.btn-accordion {
+		font-weight: bold;
+		font-size: 16px;
+		text-decoration: none !important;
+		color: black;
+	}
+	div.HLPdSheet .phone_tag_top>div {
+		width: 250px;
+	}
+	div.HLPdSheet div.datepicker_div {
+		margin-bottom: -6px !important;
+	}
+	/* .formSep {
+		border-bottom: 1px solid #DCDCDC;
+		box-shadow: 0 1px 0 #FFF;
+		margin-bottom: 5px;
+	} */
+	
+	#personalDiscussionCVPartB label.border_label {
+		font-size: 12px !important;
+	}
+	#personalDiscussionCVPartB #natureofBusiness-control-group label.border_label
+		{
+		max-width: 460px !important;
+	}
+	div.datepicker_div {
+		margin-bottom: 0px !important;
+	}
+	.txt-indent5 {
+		text-indent: 5px;
+	}
+	img[title="Delete"],#fleetDetailsPage .btn,#fleetDetailsPage .linkTohideForPrint,#auto-container,#personalDiscussionMHL .skip-print
+		{
+		display: none !important;
+	}
+	#pdSheetForHL div.phone_tag_top>div {
+		min-width: 200px;
+	}
+	label>strong,#propertyVerificationReport td,#propertyVerificationReport td label,#pd_bus_ver_report_form label,#pd_bus_ver_report_form td,#pd_bus_ver_report_form td label {
+		font-size: 12px !important;
+	}
+	.headingForPrint {
+		display: block !important;
+	}
+	.readonly_ {
+		display: none;
+	}
+	.currencyLabel{
+	font-size: 10px;
+	font-weight: bold;
+	}
+	#pd_primaryApplicant0-control-group{
+	width: auto !important;
+	}
+	.width-100{
+		width:100px !important;
+	}
+	
+	.width-50{
+		width:50px !important;
+	}
+	.reset-m{
+		margin: 0px !important
+	}
+	.m-l10{
+	margin-left: 10px !important;
+	}
+	/* table th{
+		width: 25%;
+	} */
+	
+	.button-accordion-container {
+	border-bottom:1px solid #000000;
+	margin-bottom: 10px;
+	padding: 0px 10px 10px 10px;  
+	}
+
+	#officeBusinessDetails div.input-group.input-append{
+	width: 28px !important;
+	}
+	
+	/* #businessVerificationReprt .form .row .col-sm-6:nth-child(2){
+	margin-left: 0px;
+	} */
+	
+	#isLoanRecommended-control-group div.col-sm-2{
+	width: 100px;
+	}
+	.no-border-l{
+	border-left:0px none !important;
+	}
+	.width77px_imp{
+	width: 77px !important;
+	}
+	.table{
+		border-top:1px solid #e0e0e0 !important;
+		border-right:1px solid #e0e0e0 !important;
+	}
+	/* .table-bordered td, .table-bordered th{
+		border-left:0px !important;
+	} */
+	.table {
+			margin-bottom: 15px !important;
+	}
+	
+	td .border_label {
+		border: none !important;
+	}
+	td {
+		max-width: 200px;
+		font-size: 11px;
+	}
+	td label {
+		white-space: normal !important;
+		font-size: 11px;
+	}
+	.table td, .table th{
+		padding:1px 1px 1px 3px!important;
+		border-left:solid 1px #e0e0e0;
+		border-bottom:solid 1px #e0e0e0;
+		border-top:0px !important;
+		border-right:0px !important;
+	}
+	.col-sm-6>.col-sm-12{
+		margin-left:0px !important;
+	}
+	.padding-label{
+		padding:2px 10px 2px 2px !important;
+	}
+	.no-skip-print{
+		display:block !important;
+	}
+	 .signatureDiv {
+		border:solid 1px #e0e0e0;
+	}
+	td [class*="span"]{
+		margin-left:0px !important;
+	}
+	label{
+		font-size:12px;
+	}
+	.date-help-block{
+		font-size:10px;
+		position:relative;
+		top:-7px;
+	}
+	
+	.fs-Print{
+	font-size: 12px !important;
+	}
+	
+	.fs-PrintHelpText{
+	font-size: 10px !important;
+	}
+	
+	.m-t10{
+	margin-top: 10px;
+	}
+	
+	.m-b5{
+	margin-bottom: 5px;
+	}
+	
+	.hgt70_imp{
+	height: 70px !important;
+	}
+	.m-t6 {
+	margin-top: 6px;
+}
+	.m-t15 {
+	margin-top: 15px;
+}
+
+.reset-m-b{
+	margin-bottom: 0px !important;
+}
+.m-t13 {
+	margin-top: 13px;
+}
+.reset-m-l{
+	margin-left: 0px !important;
+}
+
+td .date-help-block{
+	display: none !important;
+}
+
+#whetherSeparateEnterance-control-group label{
+	white-space: normal !important;
+}
+
+#personalDiscussionMHL td div[id^='datepicker_bankingSince_'],#personalDiscussionMHL td div[id^='OdAccountSince_'], .width-79 {
+	width: 79px !important;
+}
+.row.headingForPrint.hide{
+	border-top: 1px solid #000000;
+}
+
+#personalDiscussionCVPartA .row.headingForPrint.hide{
+	border-top: none !important;
+}
+
+/* table td{
+	padding: 3px !important;
+} */
+#borrower_detail th {
+    width: 20% !important;
+}
+
+.containerALLPdSheet #personalDiscussionExpenseDetails table th,
+.containerALLPdSheet #personalDiscussionIncomeDetails table th{
+	width: 16.66% !important;
+}
+.containerALLPdSheet #personalDiscussionObligationDetails th {
+    width: 12.5%;
+     text-align: center;
+     vertical-align: top;
+}
+.containerALLPdSheet #personalDiscussion_odAccountDetail_odAccountDetailDiv table th,
+.containerALLPdSheet #personalDiscussion_bankingDetail_bankingDetailDiv table th{
+	vertical-align: top;
+}
+
+/* Lifestyle Checks table style */
+
+#personal-discussion-life-style-checks tr.td_Col125 td:nth-child(1),
+#personal-discussion-life-style-checks tr.td_Col125 td:nth-child(3){
+	width:40%;
+}
+
+#personal-discussion-life-style-checks tr.td_Col125 td:nth-child(2){
+	width:10%;
+}
+
+#personal-discussion-life-style-checks tr.td_Col125 td:nth-child(4),
+#personal-discussion-life-style-checks tr.td_Col125 td:nth-child(5){
+	width:5%;
+}
+
+#personal-discussion-life-style-checks tr.td_Col346 td:nth-child(1),
+#personal-discussion-life-style-checks tr.td_Col346 td:nth-child(4){
+	width:40%;
+}
+
+#personal-discussion-life-style-checks tr.td_Col346 td:nth-child(2),
+#personal-discussion-life-style-checks tr.td_Col346 td:nth-child(3),
+#personal-discussion-life-style-checks tr.td_Col346 td:nth-child(5),
+#personal-discussion-life-style-checks tr.td_Col346 td:nth-child(6){
+	width:5%;
+}
+.print_m-t10{
+	margin-top: 10px;
+}
+.fs-appId{
+	font-size: 18px !important;
+    font-weight: initial !important;
+}
+#propVerificationReprt>div.row>div.col-sm-6,
+#businessVerificationReprt>div.row>div.col-sm-6{
+	width: 85% !important;
+}
+#customerDetails th {
+    width: 33.33%;
+}
+#personalDiscussionCVPartA h3.tab-content-header,
+#personalDiscussionCVPartB h3.tab-content-header{
+	margin-top: 0px !important;
+	margin-left: 10px !important;
+}
+#pd_parentContactorDetailsForm table th{
+	width: 50%;
+}
+
+}
+
+@media print /*--This is for Print--*/ {
+	
+	
+	
+	label {
+		color: black;
+	}
+	body {
+	    background: white;
+		margin: 4mm !important;
+		padding:0;
+		width: 98% !important;
+	}
+	div.containerALLPdSheet,div.containerHLPdSheet {
+		
+		background: transparent;
+		/* 	margin: 0 auto !important; */
+	}
+	.btn,.btn-primary {
+		display: none;
+	}
+	.add-on,div.text_count_div,div.tooltip {
+		display: none !important;
+	}
+	input,input[disabled] {
+		border: none !important;
+		box-shadow: none !important;
+		background: none;
+		cursor: auto !important;
+	}
+	div.help-block,.hideForPrint {
+		/* font-size: 10px !important; */
+		display: none !important;
+	}
+	
+	input::-webkit-input-placeholder {
+		color: #FFFFFF !important;
+	}
+	input:-moz-placeholder {
+		color: #FFFFFF !important;
+	}
+	input::-moz-placeholder {
+		color: #FFFFFF !important;
+	}
+	input:-ms-input-placeholder {
+		color: #FFFFFF !important;
+	}
+	.containerALLPdSheet td {
+	    max-width: 200px; 
+		font-size: 11px;
+	}
+	.containerALLPdSheet td label {
+		white-space: normal !important;
+		font-size: 11px;
+	}
+	form,.form-group {
+		margin-bottom: 2px !important;
+	}
+	
+	.containerALLPdSheet table th {
+		font-size: 12px !important;
+	}
+	.containerALLPdSheet .mobile-phn-container {
+		display: inline-block;
+	}
+	.border_label {
+		/* border:solid 1px #ddd; */
+		border:1px solid  #e0e0e0;
+		min-height: 24px;
+		padding-left: 1px;
+		white-space: normal !important;
+		font-size: 12px;
+		margin:2px
+	}
+	.min-width26 {
+		min-width: 26px;
+	}
+	.containerALLPdSheet a.btn-accordion {
+		font-weight: bold;
+		font-size: 16px;
+		text-decoration: none !important;
+		color: black;
+	}
+	div.HLPdSheet .phone_tag_top>div {
+		width: 250px;
+	}
+	div.HLPdSheet div.datepicker_div {
+		margin-bottom: -6px !important;
+	}
+	/* .formSep {
+		border-bottom: 1px solid #DCDCDC;
+		box-shadow: 0 1px 0 #FFF;
+		margin-bottom: 5px;
+	} */
+	
+	#personalDiscussionCVPartB label.border_label {
+		font-size: 11px !important;
+	}
+	#personalDiscussionCVPartB #natureofBusiness-control-group label.border_label
+		{
+		max-width: 460px !important;
+	}
+	div.datepicker_div {
+		margin-bottom: 0px !important;
+	}
+	.txt-indent5 {
+		text-indent: 5px;
+	}
+	img[title="Delete"],#fleetDetailsPage .btn,#fleetDetailsPage .linkTohideForPrint,#auto-container,#personalDiscussionMHL .skip-print
+		{
+		display: none !important;
+	}
+	#pdSheetForHL div.phone_tag_top>div {
+		min-width: 200px;
+	}
+	label>strong,#propertyVerificationReport td,#propertyVerificationReport td label,#pd_bus_ver_report_form label,#pd_bus_ver_report_form td,#pd_bus_ver_report_form td label {
+		font-size: 12px !important;
+	}
+	.headingForPrint {
+		display: block !important;
+	}
+	#fleetDetailsPage table th {
+		white-space: nowrap !important;
+	}
+	.readonly_ {
+		display: none;
+	}
+	.currencyLabel{
+	font-size: 10px;
+	font-weight: bold;
+	}
+	#pd_primaryApplicant0-control-group{
+	width: auto !important;
+	}
+	
+	/*  .table-bordered, .table-bordered th{
+	border-color: #666666 !important; 
+	} */
+	
+	/*  .table-bordered td{
+	border-left:1px solid black !important; 
+	}   */
+	.button-accordion-container {
+	border-bottom:1px solid #000000;
+	margin-bottom: 10px;
+	padding: 0px 10px 10px 10px;  
+	
+	
+	}
+	.width-100{
+		width:100px !important;
+	}
+	
+	.width-50{
+		width:50px !important;
+	}
+	.reset-m{
+		margin: 0px !important;
+	}
+	
+	.m-l10{
+	margin-left: 10px !important;
+	}
+	/* table th{
+		width: 25%;
+	} */
+	
+	#officeBusinessDetails div.input-group.input-append{
+	width: 28px !important;
+	}
+	
+/* 	#businessVerificationReprt .form .row .col-sm-6:nth-child(2){
+	margin-left: 0px ;
+	} */
+	
+	#isLoanRecommended-control-group div.col-sm-2{
+	width: 100px;
+	}
+	
+	.no-border-l{
+	border-left:0px none !important;
+	}
+	
+	.width77px_imp{
+	width: 77px !important;
+	}
+	
+	
+	
+	/* .table-bordered td, .table-bordered th{
+		border-left:0px !important;
+		
+	} */
+	.table {
+		margin-bottom: 5px !important;
+		border-left:solid 1px #e0e0e0 !important;
+		border-top:solid 1px #e0e0e0 !important;
+	}
+	.table {
+			margin-bottom: 15px !important;
+	}
+	.table th, .table td {
+		padding:1px 1px 1px 3px!important;
+		border-right:solid 1px #e0e0e0 !important;
+		border-bottom:solid 1px #e0e0e0 !important;
+		border-top:0px !important;
+		border-left:0px !important;
+	}
+	
+	td .border_label {
+		border: none !important;
+		
+	}
+	.col-sm-6>.col-sm-12{
+		margin-left:0px !important;
+	}
+	.no-skip-print{
+		display:block !important;
+	
+	}
+	.signatureDiv {
+		border:solid 1px #e0e0e0;
+	}
+	td [class*="span"]{
+		margin-left:0px !important;
+	}
+	label{
+		font-size:12px;
+	}
+	.date-help-block{
+		font-size:10px;
+		position:relative;
+		top:-7px;
+	}
+	.fs-Print{
+	font-size: 12px !important;
+	}
+	.fs-PrintHelpText{
+	font-size: 10px !important;
+	}
+	
+	.m-t10{
+	margin-top: 10px;
+	}
+
+.m-b5{
+	margin-bottom: 5px;
+	}	
+	
+	.hgt70_imp{
+	height: 70px !important;
+	}
+	.m-t6 {
+	margin-top: 6px;
+}
+.m-t15 {
+	margin-top: 15px;
+}
+.reset-m-b{
+	margin-bottom: 0px !important;
+}
+
+.m-t13 {
+	margin-top: 13px;
+}
+
+.reset-m-l{
+	margin-left: 0px !important;
+}
+
+td .date-help-block{
+	display: none !important;
+}
+
+#whetherSeparateEnterance-control-group label{
+	white-space: normal !important;
+}
+
+#personalDiscussionMHL td div[id^='datepicker_bankingSince_'],#personalDiscussionMHL td div[id^='OdAccountSince_'], .width-79 {
+	width: 79px !important;
+}
+/* table td{
+	padding: 3px !important;
+} */
+
+.row.headingForPrint.hide{
+	border-top: 1px solid #000000;
+}
+
+#personalDiscussionCVPartA .row.headingForPrint.hide{
+	border-top: none !important;
+}
+
+#borrower_detail th {
+    width: 20% !important;
+}
+
+.containerALLPdSheet #personalDiscussionExpenseDetails table th,
+.containerALLPdSheet #personalDiscussionIncomeDetails table th{
+	width: 16.66% !important;
+}
+.showForPrintOnly{
+	display: block !important;
+}
+.containerALLPdSheet #personalDiscussionObligationDetails th {
+    width: 12.5%;
+     text-align: center;
+     vertical-align: top;
+}
+
+.containerALLPdSheet #personalDiscussion_odAccountDetail_odAccountDetailDiv table th,
+.containerALLPdSheet #personalDiscussion_bankingDetail_bankingDetailDiv table th{
+	vertical-align: top;
+}
+
+/* Lifestyle Checks table style */
+
+#personal-discussion-life-style-checks tr.td_Col125 td:nth-child(1),
+#personal-discussion-life-style-checks tr.td_Col125 td:nth-child(3){
+	width:40%;
+}
+
+#personal-discussion-life-style-checks tr.td_Col125 td:nth-child(2){
+	width:10%;
+}
+
+#personal-discussion-life-style-checks tr.td_Col125 td:nth-child(4),
+#personal-discussion-life-style-checks tr.td_Col125 td:nth-child(5){
+	width:5%;
+}
+
+#personal-discussion-life-style-checks tr.td_Col346 td:nth-child(1),
+#personal-discussion-life-style-checks tr.td_Col346 td:nth-child(4){
+	width:40%;
+}
+
+#personal-discussion-life-style-checks tr.td_Col346 td:nth-child(2),
+#personal-discussion-life-style-checks tr.td_Col346 td:nth-child(3),
+#personal-discussion-life-style-checks tr.td_Col346 td:nth-child(5),
+#personal-discussion-life-style-checks tr.td_Col346 td:nth-child(6){
+	width:5%;
+}
+
+.print_m-t10{
+	margin-top: 10px;
+}
+.fs-appId{
+	font-size: 18px !important;
+    font-weight: initial !important;
+}
+
+#propVerificationReprt>div.row>div.col-sm-6,
+#businessVerificationReprt>div.row>div.col-sm-6{
+	width: 85% !important;
+}
+#customerDetails th {
+    width: 33.33%;
+}
+#personalDiscussionCVPartA h3.tab-content-header,
+#personalDiscussionCVPartB h3.tab-content-header{
+	margin-top: 0px !important;
+	margin-left: 10px !important;
+}
+
+#personalDiscussionCVPartB h3.tab-content-header{
+	font-size: 22px !important;
+}
+
+#pd_parentContactorDetailsForm table th{
+	width: 50%;
+}
+
+}
+
+
