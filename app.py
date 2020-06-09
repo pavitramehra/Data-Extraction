@@ -5,11 +5,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("base.html", Status="Not connected")
+    return render_template("index.html", Status="Not connected")
 
 @app.route("/connect_to_db", methods=["POST"])
 def render_connect_to_db_page():
-    return render_template("index.html")
+    return render_template("connection.html")
 
 
 @app.route("/connector", methods=["POST"])
