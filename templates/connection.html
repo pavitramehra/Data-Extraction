@@ -1,0 +1,395 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../static/bootstrap-rtl.min.css">
+        <link rel="stylesheet" type="text/css" href="../static/header_flat.css">
+        <link rel="stylesheet" type="text/css" href="../static/mQ-login-page.css">
+        <link rel="stylesheet" type="text/css" href="../static/mQ-login-page.min.css">
+        <link rel="stylesheet" type="text/css" href="../static/neutrino-jsp.css">
+        <link rel="stylesheet" type="text/css" href="../static/all.css">
+        
+        <style>
+            #content {
+                max-height: calc(100% - 120px);
+                overflow-y: scroll;
+                padding: 0px 10% !important;
+                margin-top: 60px !important;
+            }
+
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: blueviolet;
+            }
+
+            header {
+                z-index: 1;
+                width: 100%;
+                height: 60px;
+                position: fixed;
+                top: 0;
+                opacity: 1;
+            }
+
+            .wrapper {
+                /* min-height: 100%; */
+                height: auto !important;
+                height: 100%;
+                margin: 0 auto -60px;
+                /* the bottom margin is the negative value of the footer's height */
+            }
+
+            .push {
+                height: 60px;
+                /* .push must be the same height as .footer */
+            }
+
+            .footer {
+                z-index: 1;
+                width: 100%;
+                height: 60px;
+                position: fixed;
+                opacity: 1;
+            }
+
+            .bottom-top-header{
+                background: none repeat scroll 0 0 #ffffff;
+                border-top: 1px solid #ffffff;
+                box-shadow: 0 0 4px #ffffff;
+                margin-top: 16px;
+                padding: 10px 0;
+                text-align: center;
+                display: block;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .login_box{
+                background-attachment: scroll;
+                background-clip: border-box;
+                background-color: rgb(255,255,255);
+                background-image: none;
+                background-origin: padding-box;
+                background-position-x: 0%;
+                background-position-y: 0%;
+                background-repeat: initial;
+                background-size: auto;
+                border-radius: 6px;
+                box-shadow: rgba(0,0,0,0.2) 0px 0px 0 0 6px rgba(0,0,0,0.2);
+                box-sizing: border-box;
+                color: rgb(33,37,41);
+                display: block;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                height: 231px;
+                line-height: 24px;
+                margin-bottom: 10px;
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-top: 20px;
+                text-align: left;
+                text-size-adjust: 100%;
+                width: 960px;
+            }
+
+            .cnt_b{
+                margin: 0 auto;
+                padding: 10px;
+                width: 100%;
+            }
+
+            .formRow{
+                display: block;
+            }
+
+            .input-group{
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: stretch;
+                width: 100%;
+            }
+
+            .input-group-addon{
+
+            }
+
+            .fa,.fas{
+                font-weight: 900;
+            }
+
+            .fa,.far,.fas{
+                font-family: "Font Awesome 5 Free";
+            }
+
+            .fa,.fab,.fal,.far,.fas{
+                -moz-osx-font-smoothing:grayscale;
+                -webkit-font-smoothing:antialiased;
+                display:inline-block;font-style:normal;
+                font-variant:normal;text-rendering:auto;
+                line-height:1
+            }
+
+            .fa-user{
+                content: "\f007";
+            }
+
+            *, ::after, ::before{
+                box-sizing: border-box;
+            }
+
+            .input-group>.form-control:not(:first-child){
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+
+            .input-group>.form-control{
+                position: relative;
+                flex: 1 1 auto;
+                width: 1%;
+                margin-bottom: 0;
+            }
+            
+            .form-control{
+                display: block;
+                width: 100%;
+                height: clac(1.5em + .75rem + 2px);
+                padding: 6px 12px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #495057;
+                background-color: #ffffff;
+                background-clip: padding-box;
+                border: 1px solid #ced4da;
+                border-radius: .25rem;
+            }
+
+            .col-sm-12{
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            button, input{
+                overflow: visible;
+            }
+
+            button, input, optgroup, select, textarea{
+                margin: 0;
+                font-family: inherit;
+                font-size: inherit;
+                line-height: inherit;
+            }
+
+            input, button, select, textarea{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            input{
+                text-rendering: auto;
+                letter-spacing: normal;
+                word-spacing: normal;
+                text-transform: none;
+                text-indent: 0px;
+                text-shadow: none;
+                display: inline-block;
+                text-align: start;
+                -webkit-appearance: textfield;
+                cursor: text;
+                font: 400 13.3333px Arial;
+                padding: 1px 0px;
+                border-width: 2px;
+                border-style: inset;
+                border-color: initial;
+                border-image: initial;
+            }
+
+            .login_page,.btm_b{
+                padding: 12px 20px;
+                border-top: 1px solid #e7e7e7;
+                background: #f7f7f7;
+                border-radius: 0 0 6px 6px;
+            }
+
+            .clearfix::after{
+                display: block;
+                clear: both;
+                content: "";
+            }
+
+            [type=button]:not(:disabled),
+            [type=reset]:not(:disabled),
+            [type=submit]:not(:disabled),
+            button:not(:disabled){
+                cursor: pointer;
+            }
+
+            .btn-secondary{
+                color: #ffffff;
+                background-color: #6c757d;
+                border-color: #6c757d;
+            }
+
+            .btn{
+                display: inline-block;
+                font-weight: 400;
+                color: #212529;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .btn{
+                display:inline-block;
+                font-weight:400;
+                color:#212529;
+                text-align:center;
+                vertical-align:middle;
+                -webkit-user-select:none;
+                -moz-user-select:none;
+                -ms-user-select:none;
+                user-select:none;
+                background-color:transparent;
+                border:1px solid transparent;
+                padding:.375rem .75rem;
+                font-size:1rem;
+                line-height:1.5;
+                border-radius:.25rem;
+                transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+            }
+
+            @media (prefers-reduced-motion:reduce){.btn{transition:none}}
+
+            button, select{
+                text-transform: none;
+            }
+
+            button{
+                white-space:nowrap;
+            }
+
+            button{
+                border-radius:0;
+                -webkit-appearance: button;
+                text-rendering: auto;
+                word-spacing: normal;
+                letter-spacing: normal;
+                text-indent: 0px;
+                text-shadow: none;
+                display: inline-block;
+                text-align: center;
+                align-items: flex-start;
+                cursor: default;
+                box-sizing: border-box;
+                font: 400 13.3333px Arial;
+                padding: 1px 6px;
+                border-width: 2px;
+                border-style: outset;
+
+            }
+
+            
+            .nucleus-logo-gradient{
+                background-attachment: scroll;
+                background-clip: border-box;
+                background-color: rgb(18, 18, 194);
+                background-origin: padding-box;
+                background-position-x: 0px;
+                background-position-y: 0px;
+                background-repeat: no-repeat;
+                background-size: auto;
+                border-style: none;
+                box-sizing: border-box;
+                color: rgb(33,37,41);
+                display: block;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                height: 73px;
+                line-height: 24px;
+                margin-bottom: 0px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+                text-align: center;
+                text-size-adjust: 100%;
+                width: 202px;
+            }
+
+            .nss{
+                box-sizing: border-box;
+                color: rgb(33,37,41);
+                display: block;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                height: auto;
+                width: auto;
+                line-height: 24px;
+                text-align: center;
+                text-size-adjust: 100%;
+            }
+
+        </style>
+
+
+        <script type="text/javascript">
+            function readURL(){
+                var fullPath = document.getElementById('upload').value;
+                if (fullPath) {
+                    var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+                    var filename = fullPath.substring(startIndex);
+                    if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+                        filename = filename.substring(1);
+                    }
+                    document.getElementById("filename").value = filename;
+                }
+            }
+        </script>
+
+    </head>
+
+    <body >
+
+        <div class="wrapper">
+        <div class="nss">
+            <img alt="logo-nucleus-software-exports" class="nucleus-logo-gradient" src="../static/images/gradient-logo.png">
+        </div></div>
+
+
+        <div class="login_box" id="login_box_id">
+            <div class="cnt_b">
+                <div class="fromRow">Database Name</div>
+                <div class="fromRow">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-user">
+                            </i>
+                        </span>
+                        <input autocomplete="off" autofocus="autofocus" class="form-control col-sm-12 ng-valid ng-touched" id="databaseNameShow" name="databaseNase" type="text" value="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+<!-- <form action="http://localhost:5000/uploader" method="post">
+    <input type="file" name="file"/>
+    <input type="submit" value="Import"/>
+</form> -->
+
+        <!-- <img alt="logo-nucleus-software-exports" class="nucleus-logo-gradient" src="../static/images/gradient-logo.png"> -->
+
+
+            <input id="upload" type ="file" name = "file" value="Choose File" onchange="readURL();" />
+            <form action = "http://localhost:5000/uploader" method = "POST" enctype = "multipart/form-data">
+                <input id="filename" type="hidden" name="filename" />
+                <input type = "submit" value="Import"/>
+            </form>
+
+    </body>
+</html>
