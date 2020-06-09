@@ -1,0 +1,12 @@
+click==7.1.2
+cx-Oracle==7.3.0
+feedparser==5.2.1
+Flask==1.1.2
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+PyFladesk==1.1
+PyQt5==5.15.0
+PyQt5-sip==12.8.0
+PyQtWebEngine==5.15.0
+Werkzeug==1.0.1
