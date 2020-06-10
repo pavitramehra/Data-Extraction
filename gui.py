@@ -33,7 +33,7 @@ class WebPage(QtWebEngineWidgets.QWebEnginePage):
         return super(WebPage, self).acceptNavigationRequest(url, kind, is_main_frame)
 
 
-def init_gui(application, port=5000, width=500, height=500,
+def init_gui(application, port=5000, width=510, height=510,
              window_title="Demo", icon="appicon.png", argv=None):
     if argv is None:
         argv = sys.argv
