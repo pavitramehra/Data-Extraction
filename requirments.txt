@@ -1,5 +1,4 @@
 click==7.1.2
-cx-Oracle==7.3.0
 feedparser==5.2.1
 Flask==1.1.2
 itsdangerous==1.1.0
