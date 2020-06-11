@@ -34,7 +34,7 @@ class WebPage(QtWebEngineWidgets.QWebEnginePage):
 
 
 def init_gui(application, port=5000, width=510, height=510,
-             window_title="Demo", icon="appicon.png", argv=None):
+             window_title="Demo", icon="/home/raghav/Desktop/SQL_to_CSV/static/images/gradient-logo.png", argv=None):
     if argv is None:
         argv = sys.argv
 

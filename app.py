@@ -31,8 +31,9 @@ def connect_to_db():
 @app.route("/import_file", methods=["POST"])
 def import_data_into_csv():
     if(request.method=="POST"):
-
-        return "import_file function called."
+        source_file_name = request.form["source_file_text"]
+        destination_file_name = request.form["destination_file_text"]
+        return "import_file function called."+source_file_name+destination_file_name
     return ""
 
 if __name__ == "__main__":

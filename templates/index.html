@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="../static/font-awesome.min.css">
 
 
+
 <style>
     input[type="file"] {
         display: none;
@@ -16,7 +17,6 @@
         cursor: pointer;
     }
 </style>
-
 
 
 <app-root _nghost-c0="" ng-version="7.2.4">
@@ -54,16 +54,30 @@
                                 
                                 <!-- Source file input -->
                                 <div _ngcontent-c0="" class="formRow">
-                                    <div _ngcontent-c0="" class="input-group">
-                                    
+                                    <div _ngcontent-c0="" class="input-group ">
+
+
+
                                         <!-- Source file input text -->
                                         <input _ngcontent-c0="" autocomplete="off" autofocus="autofocus" class="form-control col-sm-12 ng-pristine ng-valid ng-touched" id="source_file_text" name="source_file_text" type="text">
-                                        
+
                                         <!-- Source file input button -->
-                                        <label for="file-upload" class="custom-file-upload">
+                                        <label for="source_file_upload" class="custom-file-upload">
                                             <i class="fa fa-cloud-upload"></i> Browse File
                                         </label>
-                                        <input id="file-upload" type="file"/>
+                                        <input id="source_file_upload" type="file" onchange="get_source_file_path()" />
+
+                                        <script>
+                                            function get_source_file_path(){
+                                                var fullPath = ('input[type=file]').value;
+                                                print(fullPath);
+                                                if (fullPath) {
+                                                    document.getElementById("source_file_text").value = fullPath;
+                                                }
+                                            }
+                                        </script>
+                
+                
                                     
                                     </div>
                                 </div>
@@ -82,10 +96,22 @@
                                         <input _ngcontent-c0="" autocomplete="off" autofocus="autofocus" class="form-control col-sm-12 ng-pristine ng-valid ng-touched" id="destination_file_text" name="destination_file_text" type="text">
                                         
                                         <!-- Destination file input button -->
-                                        <label for="file-upload" class="custom-file-upload">
+                                        <label for="destination_file_upload" class="custom-file-upload">
                                             <i class="fa fa-cloud-upload"></i> Browse File
                                         </label>
-                                        <input id="file-upload" type="file"/>
+                                        <input id="destination_file_upload" type="file" onchange="get_destination_file_path()" />
+                                        
+                                        <script>
+                                            function get_destination_file_path(){
+                                                var fullPath = document.getElementById('destination_file_upload').value;
+                                                print(fullPath);
+                                                if (fullPath) {
+                                                    document.getElementById("destination_file_text").value = fullPath;
+                                                }
+                                            }
+                                        </script>
+
+
                                     </div>
                                 </div>
                                 
@@ -112,5 +138,6 @@
 
     </div>
 </app-root>
+
 
 {% endblock %}
