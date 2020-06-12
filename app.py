@@ -24,13 +24,13 @@ def connect_to_db():
     if(request.method=="POST"):
         
         db_name = request.form["db_name"]
-        dp_password = request.form["db_password"]
+        db_password = request.form["db_password"]
         db_ip = request.form["db_ip"]
-        dp_port = request.form["db_port"]
+        db_port = request.form["db_port"]
 
-        dao.auth(db_name,db_password,db_ip,db_port,'balic2h')
+        dao.auth(db_name,db_password,db_ip,db_port,'xe')
 
-    status = "Connected to {}".format(db_name) if dao.get_status()=="connected" else "Not connected"
+    status = "Connected to {}".format(db_name) if dao.get_status()=="Connected" else "Not connected"
     return render_template("index.html", Status=status)
 
 @app.route("/import_file", methods=["POST"])
@@ -60,7 +60,7 @@ def get_dir_path():
     dir_path = filedialog.askdirectory()
     root.destroy()
 
-    return dir_path if isinstance(dir_path, str) else ""
+    return (dir_path + ("/" if dir_path[-1]!='/' else ""))if isinstance(dir_path, str) else ""
 
 
 if __name__ == "__main__":
