@@ -2,12 +2,6 @@ import pandas as pd
 import cx_Oracle
 import logging
 
-# logging.basicConfig(level=logging.DEBUG,filemode='w')
-# formatter=logging.Formatter('%(levelname)s:%(name)s:%(message)s')
-# logger=logging.getLogger(__name__)
-# logger.setLevel(logging.ERROR)
-# file_handler= logging.FileHandler('error1.log')
-# logger.addHandler(file_handler)
 
 class main():
     def __init__(self):
@@ -38,11 +32,8 @@ class main():
                 error, = e.args
                 self.user_connected="Not connected"
                 if error.code == 1017:
-                    print('Please check your credentials.')
                     self.logger.error(error.message)
-                    # sys.exit()?
                 else:
-                    print('Database connection error: %s'.format(e))
                     self.logger.error(error.message)
            
         
@@ -57,12 +48,8 @@ class main():
     def write(self,destination_file):
             try:
                 for key,value in self.input_data.iterrows():
-                    print(key,value[0])
-                    print("...........................................")
                     query=""
                     substr="LIKE"
-                    print(value[3])
-                   
                     if(str(value[3]).find(substr)!=-1):
                         condition_string=value[3].split(',')
                         new="'%"+condition_string[2]+"%'"
@@ -72,21 +59,16 @@ class main():
                     elif(str(value[3])!="nan"):
                         query=" ".join(["SELECT",str(value[2]),"FROM",str(value[1]),"WHERE",str(value[3])])
                     else:
-                        print("here")
                         query=" ".join(["SELECT",str(value[2]),"FROM",str(value[1])])
-                    print(query)
                     header=list(value[2].split(','))
                     ans=[]
                     try:
-                        print("here")
                         self.cursor.execute(query)
                         for res in self.cursor:
-                            print(res)
-                        l=list(res)
-                        ans.append(l)
+                            l=list(res)
+                            ans.append(l)
                         df=pd.DataFrame(ans)
                         df.columns=header
-                        print(ans)
                         string=str(destination_file)+value[0]+'.csv'
                         try:
                             df.to_csv(string,index=False)
@@ -97,7 +79,6 @@ class main():
                       
                     except cx_Oracle.DatabaseError as e:
                         error, = e.args
-                        print(error.message)
                         self.service_connected="Not Imported"
                         self.logger.error(error.message)
             except:
@@ -118,8 +99,5 @@ class main():
     def get_db_name(self):
         return self.db_username
                 
-# new=main()
-# new.auth('CM_GA5_ARCH_V1','CM_GA5_ARCH_V1','10.1.63.118', '1521','balic2h')
-# new.read('C:/Users/pavitra.mehra/Desktop/FILEDATA.xls')
-# new.write('C:/Users/pavitra.mehra/Desktop/')
+
 
