@@ -1,17 +1,19 @@
 import pandas as pd
 import cx_Oracle
 import logging
-logging.basicConfig(level=logging.DEBUG,filemode='w')
-formatter=logging.Formatter('%(levelname)s:%(name)s:%(message)s')
-logger=logging.getLogger(__name__)
-logger.setLevel(logging.ERROR)
-file_handler= logging.FileHandler('error1.log')
-logger.addHandler(file_handler)
+
+# logging.basicConfig(level=logging.DEBUG,filemode='w')
+# formatter=logging.Formatter('%(levelname)s:%(name)s:%(message)s')
+# logger=logging.getLogger(__name__)
+# logger.setLevel(logging.ERROR)
+# file_handler= logging.FileHandler('error1.log')
+# logger.addHandler(file_handler)
 
 class main():
     def __init__(self):
         self.input_data=None
         self.cur=None
+
     def auth(self,db_username,db_password,db_hostname,db_port,db_sid):
         dsn = cx_Oracle.makedsn(
                     db_hostname, 
@@ -52,11 +54,22 @@ class main():
                 
                 logger.error(error.message)
                 #logger.error(error.context)
-    def service(self,source_file,destination_file):
+    def service(self,source_file,destination_file): #return import status
             read(source_file)
             write(destination_file)
+
+    def get_status(self): #connected or not
+        # pass
+        return "not connected"
+
+    def log_init(self):
+        pass
+
+    def get_db_name(self):
+        return ""
                 
-            new=main()
-            new.auth('CM_GA5_ARCH_V1','CM_GA5_ARCH_V1','10.1.63.118', '1521','balic2h')
-            new.read('C:/Users/pavitra.mehra/Desktop/FILEDATA.xls')
-            new.write('C:/Users/pavitra.mehra/Desktop/')
+# new=main()
+# new.auth('CM_GA5_ARCH_V1','CM_GA5_ARCH_V1','10.1.63.118', '1521','balic2h')
+# new.read('C:/Users/pavitra.mehra/Desktop/FILEDATA.xls')
+# new.write('C:/Users/pavitra.mehra/Desktop/')
+
